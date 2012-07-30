@@ -1,0 +1,97 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>jQuery OneByOne Slider Plugin</title>
+  <script src="js/jquery-1.6.4.js"></script>
+    <script src="js/jquery.onebyone.min.js"></script>              
+	<script src="js/jquery.touchwipe.js"></script> 
+    <script type="text/javascript" charset="utf-8">	
+	 $(document).ready(function() { 
+		
+    	$('#example2').oneByOne({
+			className: 'oneByOne2',
+			easeType: 'fadeInLeft',	             
+			width: 540,
+			height: 270,
+			showArrow: false
+		});  
+				
+	 });
+   	
+	 
+    </script>       
+    <link href="css/jquery.onebyone.css" rel="stylesheet" type="text/css">
+    <link href="css/example2.css" rel="stylesheet" type="text/css">
+	<style type="text/css" media="screen">
+		#wrapper{              
+			width: 100%;    
+			-webkit-user-select: none;	 
+		}
+       
+	 
+
+		#ep2{
+			position:absolute;
+			left: 36px;
+			width: 540px;	 
+			top: 50px; 
+
+		}  
+		
+	  
+ 
+	  
+		.otherExample{ 
+			position: absolute;
+			left: 36px;
+			top: 360px;
+		}
+		.otherExample a{ 
+			display: block;
+			float: left;
+			margin-right: 16px;
+			color: #0066FF;
+		}    
+ 		.otherExample a:hover{ 
+			color: #B22222;
+			text-decoration: underline;
+		}     		
+
+	 
+	</style>
+	
+	
+</head>
+
+<body>
+	<div id="wrapper">
+
+        
+	
+      <div id="ep2"><img src="images/assets/example2.gif" alt="example" /></div>
+	 	<div id="example2">  				
+		<div class="oneByOne_item">     
+			<img src="images/example2/boken.jpg" class="img1" />
+			<span class="text1">Demo without Arrow Buttons</span>			
+			<span class="text2">Different animation style</span>												
+		</div>
+		<div class="oneByOne_item">                      
+			<img src="images/example2/keyboard.jpg"  alt=""></img>						
+		</div>
+		<div class="oneByOne_item">
+			<img src="images/example2/wordpress-256x256.png" class="wordpress" alt=""></img>
+			<span class="wp1"><a href="http://themeforest.net/user/sike">I'm WordPress</a></span>						
+		</div>                       
+		<div class="oneByOne_item">
+			<img src="images/example2/blurred.jpg" alt=""></img>
+			<span class="wp2"><a href="http://activeden.net/user/sike">Lorem ipsum dolor sit amet</a>, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</span>						
+		</div>                                                                                              
+	  </div>  
+
+        <div class="otherExample"><a href="index.html">Example 1</a></div>
+		
+    </div>
+
+</body>
+</html>

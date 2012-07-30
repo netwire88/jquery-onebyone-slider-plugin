@@ -1,0 +1,221 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+body{
+    padding:0;
+    margin:0; 
+	background: #EFEFEF;    
+} 
+
+          
+
+
+.buttonArea{
+    float: left;
+    left: 50%;
+    position: relative;            
+    top: 100%;
+	margin-top: -32px;	
+}                     
+.buttonCon{  
+    float: left;
+    left: -50%;
+    position: relative;        
+}
+.buttonCon .theButton {
+	display: block;
+	color: #B22222;
+	width: 20px;
+	height: 22px;
+	background: url(../images/assets/circlebutton.png) no-repeat;
+	text-indent: -9999px;
+	border: 0;
+	margin-right: 3px;
+	float: left;
+}
+.buttonArea a.active {
+	background-position: 0 -22px;
+}             
+
+
+.oneByOne2{ 
+	margin: 0;
+	width: 540px;
+	height: 270px;   
+	position: absolute;
+	top: 80px;
+	left: 36px;   
+}  
+
+#example2{
+	position: absolute;
+}        
+
+#example2 .oneByOne_item{
+	position: absolute;
+	width: 540px;
+	height: 270px;    
+}        
+
+
+/* slide 1 */ 
+#example2 .oneByOne_item .text1{      
+	
+	position: relative;
+	float: left;
+	margin: 40px 12px 0 48px;
+	color: #FFFFFF;	
+	font-size: 24px;  
+	background: #9ACD32;
+	padding: 8px;
+}
+
+#example2 .oneByOne_item .text2{  
+	clear: left;
+	position: relative;
+	float: left;
+	margin: 4px 12px 0 48px;
+	color: #EFEFEF;    
+	background: #808000;
+	padding: 8px;
+	font-size: 12px;
+} 
+                                
+
+
+#example2 img.img1{
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+
+
+      
+                      
+#example2 .oneByOne_item span{
+	font-family: "Lucida Grande", "Lucida Sans Unicode", helvetica, verdana, arial, sans-serif;
+}                                                                                              
+
+#example2 .oneByOne_item a{
+	text-decoration: none;
+	color: #0066FF;
+}
+
+
+#example2 .oneByOne_item img{
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+#example2 .oneByOne_item span.wp1{
+  	clear: left;
+	position: relative;
+	float: left;
+	margin: 120px 12px 0 300px; 
+	color: #FFFFFF;
+	font-size: 20px;
+	padding: 8px; 
+}         
+
+#example2 .oneByOne_item img.wordpress{
+	position: absolute;
+	top: 8px;
+	left: 0;
+}        
+
+#example2 .oneByOne_item span.wp2{
+  	clear: left;
+	position: relative;
+	float: left;
+	margin: 120px 12px 0 0px; 
+	color: #333333;
+	width: 240px;
+	font-size: 12px;
+	background: #FFFFFF;
+	padding: 8px; 
+} 
+#example2 .oneByOne_item span.wp2 a{
+	text-decoration: underline;
+}  
+
+.example2 .oneByOne_item .vimeoDemo{
+	position: absolute;
+	z-index: 200;
+	top: 0;
+	left: 0;
+}
+
+
+
+.oneByOne2 .arrowButton .prevArrow{
+	background: url(../images/assets/prev.png) no-repeat; 
+	width: 40px;
+	height: 80px;      
+	position: absolute;
+	top: 95px;	 
+	left: 12px;
+} 
+.oneByOne2 .arrowButton .nextArrow{                 
+	top: 95px;
+	right: 12px;	
+}                  
+
+
+
+/* the css for the animation */
+
+@-webkit-keyframes fadeInLeft {
+	0% {
+		opacity: 0;
+		-webkit-transform: translateX(-20px);
+	}
+	
+	100% {
+		opacity: 1;
+		-webkit-transform: translateX(0);
+	}
+}
+
+@-moz-keyframes fadeInLeft {
+	0% {
+		opacity: 0;
+		-moz-transform: translateX(-20px);
+	}
+	
+	100% {
+		opacity: 1;
+		-moz-transform: translateX(0);
+	}
+}
+
+@-ms-keyframes fadeInLeft {
+	0% {
+		opacity: 0;
+		-ms-transform: translateX(-20px);
+	}
+	
+	100% {
+		opacity: 1;
+		-ms-transform: translateX(0);
+	}
+}
+
+@keyframes fadeInLeft {
+	0% {
+		opacity: 0;
+		transform: translateX(-20px);
+	}
+	
+	100% {
+		opacity: 1;
+		transform: translateX(0);
+	}
+}
+
+.fadeInLeft {
+	-webkit-animation-name: fadeInLeft;
+	-moz-animation-name: fadeInLeft;
+	-ms-animation-name: fadeInLeft;
+	animation-name: fadeInLeft;
+}

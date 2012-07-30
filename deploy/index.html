@@ -1,0 +1,102 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>jQuery OneByOne Slider Plugin</title>
+  	<script src="js/jquery-1.6.4.min.js"></script>
+    <script src="js/jquery.onebyone.min.js"></script>              
+	<script src="js/jquery.touchwipe.min.js"></script> 
+    <script type="text/javascript" charset="utf-8">	
+	 $(document).ready(function() { 
+		
+        $('#banner').oneByOne({
+			className: 'oneByOne1',	             
+			easeType: 'random',
+			slideShow: true
+		});  
+		
+		
+	 });
+   	
+	 
+    </script> 
+    <link href="css/jquery.onebyone.css" rel="stylesheet" type="text/css">
+    <link href="css/example1.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" type="text/css" href="css/animate.css">     
+	<style type="text/css" media="screen">
+		#wrapper{              
+			width: 100%;     
+			-webkit-user-select: none;	  			
+		}
+       
+		#ep1{
+			position:absolute;
+			left: 36px;
+			top: 50px; 
+	
+		}
+
+    
+		.otherExample{ 
+			position: absolute;
+			left: 36px;
+			top: 520px;
+		}
+		.otherExample a{ 
+			display: block;
+			float: left;
+			margin-right: 16px;
+			color: #0066FF;
+		}    
+ 		.otherExample a:hover{ 
+			color: #B22222;
+			text-decoration: underline;
+		}     		
+		
+	</style>
+	
+	
+</head>
+
+<body>
+	<div id="wrapper">
+
+     	<div id="ep1"><img src="images/assets/example1.gif" alt="example" /></div>
+		<div id="banner">  				
+		<div class="oneByOne_item">
+			<img src="images/example1/item1/wordpress-256x256.png" class="wp1_3" alt=""></img>			            
+			<img src="images/example1/item1/wordpress-128x128.png" class="wp1_2" alt=""></img>			    
+			<img src="images/example1/item1/wordpress-64x64.png" class="wp1_1" alt=""></img>  			
+			<span class="txt1"><a href="http://themeforest.net/user/sike">I'm WordPress</a></span>			
+			<span class="txt2">Above is a hyperlink ;)</span>												
+		</div>
+		<div class="oneByOne_item">                                 	
+			<img src="images/example1/mouse.jpg"  class="bigImage" ></img>
+			<span class="slide2Txt1">A mouse</span>								
+			<span class="slide2Txt2">Lorem ipsum dolor sit amet</span>											
+			<span class="slide2Txt3">Deserunt mollit anim id est laborum</span>														
+		</div>	
+		
+		<div class="oneByOne_item">
+			<span class="wp1">Touch Screen</span>			
+			<span class="wp2">Please Wipe Left or Right</span>															
+			<img src="images/example1/item2/wordpress-64x64.png" class="wp1" alt=""></img>
+			<img src="images/example1/item2/wordpress-128x128.png" class="wp2" alt=""></img>			
+			<img src="images/example1/item2/wordpress-256x256.png" class="wp3" alt=""></img>
+		</div>                                                                                              
+
+		<div class="oneByOne_item">                                 	
+			<img src="images/example1/bigimage.jpg"  class="bigImage" ></img>
+			<span class="slide5Txt1">Support Big Image</span>								
+			<span class="slide5Txt2">Unlimited Text block</span>											
+		</div>	
+		
+		</div>      
+	
+        <div class="otherExample"><a href="example2.html">Example 2</a></div>
+        	
+        </div>          
+    </div>
+
+</body>
+</html>
