@@ -197,8 +197,8 @@
             for(var i = 0; i < bannerNum; i++){
 					buttonCon.append('<a class="theButton" rel="'+ i +'">'+ (i + 1) +'</a>').css('cursor', 'pointer');
             }              
-                 
-            $('.buttonCon a:eq('+ currentBannerNum +')', buttonArea).addClass('active');
+            if(currentBannerNum != -1)
+            	$('.buttonCon a:eq('+ currentBannerNum +')', buttonArea).addClass('active');
             $('.buttonCon a', buttonArea).bind('click', function(event){        			  
                 if($(this).hasClass('active')) return false;   
 				var _n = $(this).attr('rel'); 	
